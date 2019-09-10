@@ -7,19 +7,19 @@ exports.up = function(knex) {
             .unique()
             .first();
 
-        tbl.string('Make')
+        tbl.string('Make', 128)
             .notNullable();
 
-        tbl.string('Model')
+        tbl.string('Model',128)
             .notNullable();
 
         tbl.integer('Mileage')
             .notNullable();
 
-        tbl.string('Transmission')
+        tbl.string('Transmission', 128)
             .notNullable();
 
-        tbl.string('Title')
+        tbl.string('Title', 128)
             .notNullable();
     });
   
